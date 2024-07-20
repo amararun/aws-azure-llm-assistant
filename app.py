@@ -12,16 +12,16 @@ logger = logging.getLogger(__name__)
 app = FastAPI()
 
 # Database connection details for AWS
-aws_database_name = "schema_defaults"
-aws_host = "db-instance-defaults.cxs2y6mgcxaf.us-east-1.rds.amazonaws.com"
-aws_user = "defaults_admin"
-aws_password = "awsdefaultsKanakpura*123"
+aws_database_name = "example_schema"
+aws_host = "db-instance-example123.us-east-1.rds.amazonaws.com"
+aws_user = "admin_example"
+aws_password = "awsExamplePassword!456"
 
 # Database connection details for Azure
-azure_database_name = "schema_bankdat"
-azure_host = "server-bankdat3.mysql.database.azure.com"
-azure_user = "db_bankdat_admin"
-azure_password = "azurebdatKanakpura*123"
+azure_database_name = "example_db"
+azure_host = "example-server3.mysql.database.azure.com"
+azure_user = "example_admin"
+azure_password = "azureExamplePassword!789"
 
 def create_aws_connection():
     connection = mysql.connector.connect(
