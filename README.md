@@ -9,8 +9,7 @@ https://medium.com/@amarharolikar/build-an-analytics-assistant-app-flowise-ai-te
 
 
 ## YouTube Video: Walkthrough of Implementation Steps.
-### Build an Analytics Assistant App: Flowise AI, Text-to-SQL, FastAPI 
-https://www.youtube.com/watch?v=b-PcMF0Vo74
+Build an Analytics Assistant App: Flowise AI, Text-to-SQL, FastAPI (https://www.youtube.com/watch?v=b-PcMF0Vo74)
 
 
 ## LLM Assistant Video & Posts
