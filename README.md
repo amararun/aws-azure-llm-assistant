@@ -1,7 +1,6 @@
 # Analytics Assistant LLM - GenAI App
 Prototype. Connected to AWS and Azure MySQL DataWarehouse
-Build an Analytics Assistant App: Flowise AI, Text-to-SQL, FastAPI. Connect & Analyze. Any Data Warehouse. AWS-Azure MySQL
-
+Build an Analytics Assistant App: Flowise AI, Text-to-SQL, FastAPI. Connect & Analyze. Any Data Warehouse. AWS-Azure MySQL  
 
 
 ## Detailed Implementation Guide : Friend Link (free access) to Medium.com Post
