@@ -1,16 +1,20 @@
-# LLM Analytics Assistant. Prototype. Connected to AWS and Azure MySQL DataWarehouse
+# Analytics Assistant LLM - GenAI App
+Prototype. Connected to AWS and Azure MySQL DataWarehouse
 Build an Analytics Assistant App: Flowise AI, Text-to-SQL, FastAPI. Connect & Analyze. Any Data Warehouse. AWS-Azure MySQL
+
+
 
 ## Detailed Implementation Guide : Friend Link (free access) to Medium.com Post
 Includes step by step guide and detailed explanations.
 https://medium.com/@amarharolikar/build-an-analytics-assistant-app-flowise-ai-text-to-sql-fastapi-01d8378243b4
 
+
 ## YouTube Video: Walkthrough of Implementation Steps.
 ### Build an Analytics Assistant App: Flowise AI, Text-to-SQL, FastAPI 
 https://www.youtube.com/watch?v=b-PcMF0Vo74
 
-## LLM Assistant Video & Posts
 
+## LLM Assistant Video & Posts
 In my earlier videos and posts, I showed how the Analytics Assistant App works… connecting to and analyzing data on AWS RDS MySQL and Azure MySQL, with table sizes ranging from 1 million to 10 million records… smoothly converting natural language text to SQL… summarizing, merging, and creating customer profiles.
 
 This is similar to a setup I am currently using for a live client use case. This is a barebones version for sharing publicly.
@@ -24,8 +28,9 @@ I used a FastAPI server in the middle to allow ease of connectivity to any backe
 
 I’ve deployed this setup on my public website (tigzig.com) using Flowise AI, and I also have a custom GPT version. In both cases, my FastAPI server and backend databases are the same.
 
-## What is covered in the Guide.
 
+
+## What is covered in the Guide.
 1. Example of Text-to-SQL
 2. Implementation: Step 1 — FastAPI Server — Code
 3. Implementation: Step 2 — FastAPI Server — Deploy
