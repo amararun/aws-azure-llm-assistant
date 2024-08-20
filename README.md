@@ -47,10 +47,7 @@ I’ve deployed this setup on my public website (tigzig.com) using Flowise AI, a
 
 ## 5 Flowise ChatFlow and Tool Templates 
 
-See the repository. I have exported the JSON template for ChatFlow as well as the tool agent. You can download the json files to your local drive and then upload them directly to Flowise. 
-
-For uploading ChatFlow: Chatflows -> Add New -> Settings -> Load
-For uploading Tool : Tools -> Load 
+See the repository. I have exported the JSON template for ChatFlow as well as the tool agent. You can download the json files to your local drive and then upload/ import them directly to Flowise. 
 
 https://github.com/amararun/aws-azure-llm-assistant/blob/main/ANALYTICS_ASSISTANT_LLM_APP_CHATFLOW.json
 https://github.com/amararun/aws-azure-llm-assistant/blob/main/ANALYTICS_ASSISTANT_LLM_APP_CUSTOM_TOOL.json
