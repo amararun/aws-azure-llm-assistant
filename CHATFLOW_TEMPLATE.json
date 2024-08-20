@@ -1,108 +1,6 @@
 {
   "nodes": [
     {
-      "id": "toolAgent_0",
-      "position": {
-        "x": -1905.5671833446354,
-        "y": -992.1531427888121
-      },
-      "type": "customNode",
-      "data": {
-        "id": "toolAgent_0",
-        "label": "Tool Agent",
-        "version": 1,
-        "name": "toolAgent",
-        "type": "AgentExecutor",
-        "baseClasses": [
-          "AgentExecutor",
-          "BaseChain",
-          "Runnable"
-        ],
-        "category": "Agents",
-        "description": "Agent that uses Function Calling to pick the tools and args to call",
-        "inputParams": [
-          {
-            "label": "System Message",
-            "name": "systemMessage",
-            "type": "string",
-            "default": "You are a helpful AI assistant.",
-            "rows": 4,
-            "optional": true,
-            "additionalParams": true,
-            "id": "toolAgent_0-input-systemMessage-string"
-          },
-          {
-            "label": "Max Iterations",
-            "name": "maxIterations",
-            "type": "number",
-            "optional": true,
-            "additionalParams": true,
-            "id": "toolAgent_0-input-maxIterations-number"
-          }
-        ],
-        "inputAnchors": [
-          {
-            "label": "Tools",
-            "name": "tools",
-            "type": "Tool",
-            "list": true,
-            "id": "toolAgent_0-input-tools-Tool"
-          },
-          {
-            "label": "Memory",
-            "name": "memory",
-            "type": "BaseChatMemory",
-            "id": "toolAgent_0-input-memory-BaseChatMemory"
-          },
-          {
-            "label": "Tool Calling Chat Model",
-            "name": "model",
-            "type": "BaseChatModel",
-            "description": "Only compatible with models that are capable of function calling: ChatOpenAI, ChatMistral, ChatAnthropic, ChatGoogleGenerativeAI, ChatVertexAI, GroqChat",
-            "id": "toolAgent_0-input-model-BaseChatModel"
-          },
-          {
-            "label": "Input Moderation",
-            "description": "Detect text that could generate harmful output and prevent it from being sent to the language model",
-            "name": "inputModeration",
-            "type": "Moderation",
-            "optional": true,
-            "list": true,
-            "id": "toolAgent_0-input-inputModeration-Moderation"
-          }
-        ],
-        "inputs": {
-          "tools": [
-            "{{customTool_0.data.instance}}"
-          ],
-          "memory": "{{bufferMemory_0.data.instance}}",
-          "model": "{{chatOpenAI_0.data.instance}}",
-          "systemMessage": "Use Tool to answer user query. Convert user query to MySQL ",
-          "inputModeration": "",
-          "maxIterations": "3"
-        },
-        "outputAnchors": [
-          {
-            "id": "toolAgent_0-output-toolAgent-AgentExecutor|BaseChain|Runnable",
-            "name": "toolAgent",
-            "label": "AgentExecutor",
-            "description": "Agent that uses Function Calling to pick the tools and args to call",
-            "type": "AgentExecutor | BaseChain | Runnable"
-          }
-        ],
-        "outputs": {},
-        "selected": false
-      },
-      "width": 300,
-      "height": 434,
-      "selected": false,
-      "positionAbsolute": {
-        "x": -1905.5671833446354,
-        "y": -992.1531427888121
-      },
-      "dragging": false
-    },
-    {
       "id": "customTool_0",
       "position": {
         "x": -2244.8601786914,
@@ -409,6 +307,117 @@
         "y": -1441.4803805265842
       },
       "dragging": false
+    },
+    {
+      "id": "toolAgent_0",
+      "position": {
+        "x": -1792.7579768714704,
+        "y": -1068.2113926845323
+      },
+      "type": "customNode",
+      "data": {
+        "id": "toolAgent_0",
+        "label": "Tool Agent",
+        "version": 2,
+        "name": "toolAgent",
+        "type": "AgentExecutor",
+        "baseClasses": [
+          "AgentExecutor",
+          "BaseChain",
+          "Runnable"
+        ],
+        "category": "Agents",
+        "description": "Agent that uses Function Calling to pick the tools and args to call",
+        "inputParams": [
+          {
+            "label": "System Message",
+            "name": "systemMessage",
+            "type": "string",
+            "default": "You are a helpful AI assistant.",
+            "description": "If Chat Prompt Template is provided, this will be ignored",
+            "rows": 4,
+            "optional": true,
+            "additionalParams": true,
+            "id": "toolAgent_0-input-systemMessage-string"
+          },
+          {
+            "label": "Max Iterations",
+            "name": "maxIterations",
+            "type": "number",
+            "optional": true,
+            "additionalParams": true,
+            "id": "toolAgent_0-input-maxIterations-number"
+          }
+        ],
+        "inputAnchors": [
+          {
+            "label": "Tools",
+            "name": "tools",
+            "type": "Tool",
+            "list": true,
+            "id": "toolAgent_0-input-tools-Tool"
+          },
+          {
+            "label": "Memory",
+            "name": "memory",
+            "type": "BaseChatMemory",
+            "id": "toolAgent_0-input-memory-BaseChatMemory"
+          },
+          {
+            "label": "Tool Calling Chat Model",
+            "name": "model",
+            "type": "BaseChatModel",
+            "description": "Only compatible with models that are capable of function calling: ChatOpenAI, ChatMistral, ChatAnthropic, ChatGoogleGenerativeAI, ChatVertexAI, GroqChat",
+            "id": "toolAgent_0-input-model-BaseChatModel"
+          },
+          {
+            "label": "Chat Prompt Template",
+            "name": "chatPromptTemplate",
+            "type": "ChatPromptTemplate",
+            "description": "Override existing prompt with Chat Prompt Template. Human Message must includes {input} variable",
+            "optional": true,
+            "id": "toolAgent_0-input-chatPromptTemplate-ChatPromptTemplate"
+          },
+          {
+            "label": "Input Moderation",
+            "description": "Detect text that could generate harmful output and prevent it from being sent to the language model",
+            "name": "inputModeration",
+            "type": "Moderation",
+            "optional": true,
+            "list": true,
+            "id": "toolAgent_0-input-inputModeration-Moderation"
+          }
+        ],
+        "inputs": {
+          "tools": [
+            "{{customTool_0.data.instance}}"
+          ],
+          "memory": "{{bufferMemory_0.data.instance}}",
+          "model": "{{chatOpenAI_0.data.instance}}",
+          "chatPromptTemplate": "",
+          "systemMessage": "You are a helpful AI assistant.",
+          "inputModeration": "",
+          "maxIterations": ""
+        },
+        "outputAnchors": [
+          {
+            "id": "toolAgent_0-output-toolAgent-AgentExecutor|BaseChain|Runnable",
+            "name": "toolAgent",
+            "label": "AgentExecutor",
+            "description": "Agent that uses Function Calling to pick the tools and args to call",
+            "type": "AgentExecutor | BaseChain | Runnable"
+          }
+        ],
+        "outputs": {},
+        "selected": false
+      },
+      "width": 300,
+      "height": 484,
+      "positionAbsolute": {
+        "x": -1792.7579768714704,
+        "y": -1068.2113926845323
+      },
+      "selected": false
     }
   ],
   "edges": [
