@@ -51,3 +51,9 @@ See the repository. I have exported the JSON template for ChatFlow as well as th
 
 https://github.com/amararun/aws-azure-llm-assistant/blob/main/ANALYTICS_ASSISTANT_LLM_APP_CHATFLOW.json
 https://github.com/amararun/aws-azure-llm-assistant/blob/main/ANALYTICS_ASSISTANT_LLM_APP_CUSTOM_TOOL.json
+
+## Author
+
+Built by [Amar Harolikar](https://www.linkedin.com/in/amarharolikar/)
+
+Explore 30+ open source AI tools for analytics, databases & automation at [tigzig.com](https://tigzig.com)
